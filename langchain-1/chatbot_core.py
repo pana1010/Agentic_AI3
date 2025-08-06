@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-
+import streamlit as st
 from langchain.chat_models import init_chat_model
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_groq import ChatGroq
@@ -9,8 +9,10 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableLambda
 
 # ─── Load API Key ───────────────────────────────────────────────────────────────
-load_dotenv()
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+# load_dotenv()
+# os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
 # ─── Initialize Models ─────────────────────────────────────────────────────────
 model = init_chat_model("groq:llama-3.1-8b-instant")
