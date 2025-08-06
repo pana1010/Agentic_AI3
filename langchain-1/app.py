@@ -50,27 +50,27 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ─── Load Lottie Animation ───────────────────────────────────────────────────────
-def load_lottie(url: str):
-    try:
-        r = requests.get(url)
-        if r.status_code == 200:
-            return r.json()
-    except:
-        pass
-    return None
+# def load_lottie(url: str):
+#     try:
+#         r = requests.get(url)
+#         if r.status_code == 200:
+#             return r.json()
+#     except:
+#         pass
+#     return None
 
-lottie_energy = load_lottie("https://lottie.host/8e45add1-58b7-4e22-b8db-ec35f51fbb82/Vh8JqESc2g.json")
+# lottie_energy = load_lottie("https://lottie.host/8e45add1-58b7-4e22-b8db-ec35f51fbb82/Vh8JqESc2g.json")
 
-# ─── Header ─────────────────────────────────────────────────────────────────────
-with st.container():
-    col1, col2 = st.columns([1, 2])
-    if lottie_energy:
-        st_lottie(lottie_energy, height=200, key="energy_anim")
-    st.markdown("## ⚡ Energy Conservation Chatbot")
-    st.markdown(
-        "Get personalized advice to save energy, recommend efficient appliances, "
-        "and explore renewable options."
-    )
+# # ─── Header ─────────────────────────────────────────────────────────────────────
+# with st.container():
+#     col1, col2 = st.columns([1, 2])
+#     if lottie_energy:
+#         st_lottie(lottie_energy, height=200, key="energy_anim")
+#     st.markdown("## ⚡ Energy Conservation Chatbot")
+#     st.markdown(
+#         "Get personalized advice to save energy, recommend efficient appliances, "
+#         "and explore renewable options."
+#     )
 
 # ─── Tabs ───────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3, tab4 = st.tabs([
