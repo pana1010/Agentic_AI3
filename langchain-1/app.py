@@ -1,6 +1,6 @@
 import streamlit as st
 from dotenv import load_dotenv
-from streamlit_lottie import st_lottie
+# from streamlit_lottie import st_lottie
 import requests
 
 # Load environment (GROQ_API_KEY handled in chatbot_core.py)
