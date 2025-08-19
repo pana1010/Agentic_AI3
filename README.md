@@ -4,11 +4,11 @@ Introduction:
 With the rapid growth in energy consumption and climate concerns, encouraging
 sustainable habits has become critical. Personalized guidance can drive impactful
 behavioral change. However, current tools are either too generic or lack intelligent
-interaction.
+interaction./n
 This project presents the development of an AI-powered chatbot leveraging Large
 Language Models (LLMs) to offer tailored energy-saving advice. Integrated with
 Grok (xAI) and deployed via Streamlit, the chatbot aims to enhance user
-engagement, awareness, and adoption of sustainable practices.
+engagement, awareness, and adoption of sustainable practices./n
 Problem Statement:
 Despite growing awareness about energy conservation, many individuals lack access
 to personalized and interactive tools that guide sustainable living. Traditional
@@ -71,3 +71,4 @@ awareness and action in energy conservation. By integrating LLMs, explainable AI
 and Streamlit, we’ve created a solution that is engaging, scalable, and impactful. It
 has the potential to inspire thousands toward sustainable living—one personalized
 chat at a time.
+
